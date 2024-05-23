@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fixed stacked-cards stacked-cards-fanOut mycards">
+        <div class="row">
+            <div class="col-lg-10 col-md-8 col-sm-6">
+        <center>
+            <h2>FanOut</h2>
+        </center>
+            <div class="mycards">
+                <ul>
+                    <li style="transform-origin: center bottom; transform: translate(-150%, 0%) scale(0.2) rotate(-40deg); z-index: 11;"><img class="img-fluid" src="media/alex-sanislav-n_ACNps23kA-unsplash.jpg" alt=""></li>
+                    <li style="transform-origin: center bottom; transform: translate(-125%, 0%) scale(0.4) rotate(-30deg); z-index: 12;"><img class="img-fluid" src="media/catalin-serban-b0CEpd0m1QY-unsplash.jpg" alt=""></li>
+                    <li style="transform-origin: center bottom; transform: translate(-100%, 0%) scale(0.6) rotate(-20deg); z-index: 13;"><img class="img-fluid" src="media/fuu-j-1GcWQAm9a2I-unsplash.jpg" alt=""></li>
+                    <li style="transform-origin: center bottom; transform: translate(-75%, 0%) scale(0.8) rotate(-10deg); z-index: 14;"><img class="img-fluid" src="media/joseph-barrientos-oQl0eVYd_n8-unsplash.jpg" alt=""></li>
+                    <li class="active fanOut" style="transform-origin: center bottom; z-index: 45; transform: translate(-50%, 0%) scale(1);"><img class="img-fluid" src="media/lorena-preda-TKai7IeYFQk-unsplash.jpg" alt=""></li>
+                    <li style="transform-origin: center bottom; transform: translate(-25%, 0%) scale(0.8) rotate(10deg); z-index: 12;"><img class="img-fluid" src="media/marina-YmQ0-nmWcV0-unsplash.jpg" alt=""></li>
+                    <li style="transform-origin: center bottom; transform: translate(0%, 0%) scale(0.6) rotate(20deg); z-index: 11;"><img class="img-fluid" src="media/yearone-7RTUojw8Tjc-unsplash.jpg" alt=""></li>
+                    <li style="transform-origin: center bottom; transform: translate(25%, 0%) scale(0.4) rotate(30deg); z-index: 10;"><img class="img-fluid" src="media/tom-winckels-I7oLRdM9YIw-unsplash (1).jpg" alt=""></li>
+                    <li style="transform-origin: center bottom; transform: translate(50%, 0%) scale(0.2) rotate(40deg); z-index: 9;"><img class="img-fluid" src="media/yearone-VddY4G3skPs-unsplash.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+            </div>
+        
+    </div>
+    
+
+   <script src="script.js"></script>
+   <script>
+    var stackedCard = new stackedCards({
+	 	selector: '.stacked-cards',
+	 	layout: "fanOut",
+	 	transformOrigin: "bottom",
+	});
+
+	stackedCard.init();
+
+
+    var stackedCard = new stackedCards({
+	 	selector: '.mycards',
+	 	layout: "slide",
+	 	transformOrigin: "center",
+	});
+
+	stackedCard.init();
+   </script>
+</body>
+</html>
